@@ -1,3 +1,24 @@
+//CODE DOES NOT RUN
+var doCoolStuff = function () {
+	var currentClassName = document.getElementById('cool').className;
+
+	if(currentClassName === 'cool') {
+		document.getElementById('cool').className = 'cool red';
+	} else {
+		document.getElementById('cool').className = 'cool';
+	}
+	/* document = main window
+		changing class name
+	*/
+};
+
+
+//CODE DOES NOT RUN
+var sayMyName = function(name) {
+	alert('My name is: ' + name);
+};
+
+
 //create object
 var car = {
 //proptery: value
@@ -7,9 +28,11 @@ var car = {
 	//boolean
 	isTurnedOn: false,
 	numberOfWheels: 4, 
-	//array - list
-	//car.seats = ["seat 1", "seat 2", "seat 3", "seat 4"]
-	//car.seats.length = 4
+	/* 
+	array - list
+	car.seats = ["seat 1", "seat 2", "seat 3", "seat 4"]
+	car.seats.length = 4 
+	*/
 	seats: [
 		'seat 1', 
 		'seat 2', 
@@ -42,6 +65,3 @@ var car = {
 };
 console.log('hello there friends!');
 
-var sayMyName = function(name) {
-	alert('My name is: ' + name);
-};	
