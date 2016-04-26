@@ -1,5 +1,175 @@
-hello js rocket
 
-<script type = "text/javascript">
-	console.log('hello there friends!');
-</script>
+
+<!-- 
+list of objects that has access to aka PROPERTIES
+list of actions to ask to perform aka METHODS
+
+analogy: car
+properties: 
+	-make, 
+	-seats, 
+		-list of seats and each seat is an object with own sets of properties and methods
+		-properties: number of seats
+		-method: give me seat: 1
+			-color
+			-is seatbelt working
+			-warm the seats
+			-recline
+	-year made, 
+	-current speed, 
+	-model, 
+	-paint color, 
+		-red, blue, green
+	-seats, 
+	-turned on
+		-yes or no
+	-engine
+		-another objet
+-vary in type
+
+
+methods:
+	-turn on, 
+	-change gear, 
+	-show the warning light, 
+	-open the sun roof, 
+	-pop the hood
+
+*use dot notation
+
+car.isTurnedOn
+car.color
+car.seats
+
+Instruction
+car.turnOn()
+car.sunRoof()
+car.popTheHood()
+
+VARIABLE - var refers to something else
+	-no spaces or dashes, able to use spaces & camelCase
+	-assign to value; value able to change
+		-string, number, array
+
+var favColor = 'red';
+
+ARRAY - LIST []
+	-text, number, variables, functions, objects
+
+var myFavColors = ['blue', 'red', 'green'];
+var numOfFavColors = 3;
+var hasGotFavColors = true;
+
+
+OBJECT - combination of all, similar to array
+	-name for each list item
+
+var richObject = {
+	firstName: 'Rich', 
+	lastName: 'Armstrong',
+	favColors: ['blue', 'red', 'green'],
+	yearsAlive: 103, 
+	isMale: true
+};
+
+FUNCTION - something that can be reused, var can refer to a function
+	-need name
+	-parathensis 
+	-what happens is inside {}
+
+function whatIsMyFavColor () {
+	
+}
+	-to invole, put parathensis after function
+ 
+ SAME AS 
+
+var whatIsMyFavColor = function () {
+	return false;
+
+	return true; 
+
+	return 'blue';
+}
+*anything after the first return, doesn't run
+
+
+var doSomething = function() {
+	console.log("do something!!!");
+}
+
+
+var area = function(width, height) {
+	return width * height
+}
+
+to invoke:
+area(5, 4) ==> 20
+area(3, 2) ==> 6
+
+var fullName = function(firstname, secondname) {
+	return firstname + " " + secondname;
+}
+
+to invoke: 
+fullName('Rach', 'Wang') ==> 'Rach Wang'
+
+
+IF STATEMENTS
+if (true) {
+	//do something;
+};
+
+
+if('male' === 'male') {
+	alert('male');	
+};
+
+
+
+var number1 = 10; 
+var number2 = 100;
+
+if (number1 > number2) {
+	alert('true!!');
+} else {
+	alert('false!!');
+};
+
+
+var name1 = 'Rich';
+var name2 = 'Bob';
+
+if (name1 === 'Rich') {
+	alert('true 1!!');
+} else if (name2 === 'Rich') {
+	alert('true 2!!'); 
+} else {
+	alert('false!!!');
+}
+
+var name1 = 'Rich';
+var name2 = 'Bob';
+
+if (name1 === 'Rich' && name2 === 'Bob') {
+	alert('true 1!!');
+} else if (name2 === 'Rich') {
+	alert('true 2!!'); 
+} else {
+	alert('false!!!');
+}
+
+-->
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>JS ROCKET</title>
+	<script type = "text/javascript" src= "js/script.js"></script>
+	<link rel= "stylesheet" type="text/css" href= "css/style.css"> 
+</head>
+<body>
+	<h1>hello js rocket</h1>
+	<!--WHY IS # IMPORTANT??-->
+	<a href="#" onclick = "sayMyName('Rachel');">CLICK ME</a>
+</body>
+</html>
