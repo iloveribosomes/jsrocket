@@ -12,5 +12,6 @@ body{
 }
 
 .cool.red{
+	visibility: visible;
 	background-color: red;
 }

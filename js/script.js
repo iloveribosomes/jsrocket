@@ -3,7 +3,6 @@ var doCoolStuff = function () {
 		changing class name
 	*/
 	var currentClassName = document.getElementById('cool').className;
-	
 	if(currentClassName === 'cool') {
 		//changing class name
 		document.getElementById('cool').className = 'cool red';
