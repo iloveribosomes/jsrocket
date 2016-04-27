@@ -1,0 +1,85 @@
+.left{ /*interface here*/
+	background-color: aquamarine;
+	position: fixed;
+	width: 50%; /* takes up 50% of browser window */
+	height: 100%; /* takes up 100% of browser window */
+	top: 0; 
+	left: 0;
+}
+
+.right{ /*rocket here*/
+	background-color: aliceblue;
+	position: fixed;
+	width: 50%; /* takes up 50% of browser window */
+	height: 100%; /* takes up 100% of browser window */
+	top: 0; 
+	right: 0;
+
+}
+
+.ground{
+	background-color: green; 
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 20px;
+}
+
+.rocket{
+	position: absolute; /* where is my parent? 
+	on .html: <div class = "right">
+				<div class = "rocket"></div>
+			</div> */
+	left: 50%;
+	bottom: 20px;
+	width: 20px;
+	height: 100px;
+	background-color: blue;
+	transition: bottom 10000ms; 
+}
+
+
+.rocket.flying{
+	bottom: 1000px;
+}
+
+/*QUESTION: 
+if rocket doesn't fly, why do we have to change CSS and not JS??*/
+body.body-state1 .rocket, {
+	transition: none;
+}
+body.body-state3 .rocket, /*starting to go up*/
+body.body-state4 .rocket{ /*success*/
+	bottom: 1000px;
+} 
+
+
+
+.state1,
+.state2,
+.state3,
+.state4,
+.state5{
+	display: none;	
+}
+
+body.body-state1 .state1{display: block;}
+body.body-state2 .state2{display: block;}
+body.body-state3 .state3{display: block;}
+body.body-state4 .state4{display: block;}
+body.body-state5 .state5{display: block;}
+
+a{
+
+
+
+
+}
+
+
+
+a.button{
+
+
+}

@@ -1,20 +1,20 @@
-var doCoolStuff = function () {
-	/* document = main window
-		changing class name
-	*/
-	var currentClassName = document.getElementById('cool').className;
-	if(currentClassName === 'cool') {
-		//changing class name
-		document.getElementById('cool').className = 'cool red';
-	} else {
-		document.getElementById('cool').className = 'cool';
-	}
-};
+// var doCoolStuff = function () {
+// 	/* document = main window
+// 		changing class name
+// 	*/
+// 	var currentClassName = document.getElementById('cool').className;
+// 	if(currentClassName === 'cool') {
+// 		//changing class name
+// 		document.getElementById('cool').className = 'cool red';
+// 	} else {
+// 		document.getElementById('cool').className = 'cool';
+// 	}
+// };
 
 var sayMyName = function(name) {
-	alert('My name is: ' + name);
+	alert('My name is: ' + name) ;
 };
-
+ 
 
 //create object
 	var car = {
