@@ -22,8 +22,7 @@ var changeState = function(state) {
 		timer = setInterval(function () {
 			countdownNumber = countdownNumber - 1;
 			document.getElementById('countdown').innerHTML = countdownNumber;
-		
-		
+
 		if(countdownNumber <= 0) {
 			changeState(3); //Lift Off state
 		}
@@ -32,11 +31,9 @@ var changeState = function(state) {
 	} else if (state === 3) {
 		var success = setTimeout(function() {
 				var randomNumber = Math.round(Math.random() * 10);
-
 				console.log('randomNumber:', randomNumber);
-
 				//succes
-				if (randomNumber > 5) { 
+				if (randomNumber > 2) { 
 					//do something
 					changeState(4);
 				} else {
@@ -54,9 +51,8 @@ var changeState = function(state) {
 1) if rocket doesn't fly, why do we have to change CSS and not JS??
 2) why only use two == vs three?
 3) In JS, is unit of time(line 24 & 29) always counted in milliseconds?
-4)
-
-
+4) why won't my rocket snap back to the ground?
+5) why does my rocket sometimes get off the screen and sometimes doesn't?
 */
 
 
